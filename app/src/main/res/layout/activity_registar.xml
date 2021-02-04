@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registar"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50sp"></TextView>
+
+    <ImageView
+        android:layout_width="262dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/user"></ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nome"
+        android:id="@+id/et_nome"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:id="@+id/et_telefone"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/et_email"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de Nascimento"
+        android:inputType="date"
+        android:id="@+id/et_dataNasc"></EditText>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="left">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Sexo:"
+           android:textSize="20sp"
+           android:layout_margin="8sp"></TextView>
+
+
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rg_sexo"
+           android:orientation="horizontal">
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rb_men"
+               android:text="Men"
+               android:onClick="RadioGroupSexo"></RadioButton>
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rb_woman"
+               android:text="Woman"
+               android:onClick="RadioGroupSexo"></RadioButton>
+       </RadioGroup>
+   </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/et_pass"></EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/bt_register"
+            android:layout_marginEnd="60sp"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/bt_cancelar"
+            android:backgroundTint="@android:color/holo_red_dark"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
